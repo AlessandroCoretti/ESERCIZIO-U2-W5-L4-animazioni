@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  padding: 4rem;
+  font-family: "Indie Flower", cursive;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 2rem;
+  background-color: hsl(107deg 4.1% 24.48% / 95%);
+}
+
+h1 {
+  font-size: 90px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 55px;
+}
+
+body div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+  height: 400px;
+  width: 560px;
+  box-shadow: inset 0px -40px 33px rgba(0, 0, 0, 0.3);
+  transition: scale 200ms, transform 120ms;
+}
+
+body div:nth-child(1),
+div:nth-child(5),
+div:nth-child(7) {
+  background-color: #ffff8c;
+  transform: rotate(-4deg);
+  transform-origin: top right;
+}
+
+body div:nth-child(1):hover,
+div:nth-child(5):hover,
+div:nth-child(7):hover {
+  transform: rotate(0deg);
+  scale: 1.05;
+}
+
+body div:nth-child(2),
+div:nth-child(4),
+div:nth-child(8) {
+  background-color: #8dff83;
+  transform: rotate(4deg);
+  transform-origin: top left;
+}
+
+body div:nth-child(2):hover,
+div:nth-child(4):hover,
+div:nth-child(8):hover {
+  transform: rotate(0deg);
+  scale: 1.05;
+}
+
+body div:nth-child(3),
+div:nth-child(6) {
+  background-color: #cba2fa;
+  transform: rotate(-6deg);
+  transform-origin: top right;
+}
+
+body div:nth-child(3):hover,
+div:nth-child(6):hover {
+  transform: rotate(0deg);
+  scale: 1.05;
+}
